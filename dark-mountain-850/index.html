@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Header</title>
+<style id="jsbin-css">
+* {
+  font-family: sans-serif;
+}
+</style>
+</head>
+  
+<body>
+<h3>Header(Alert)</h3>
+<hr>
+<form>
+  <br>식별자 : <input type="text" value="" placeholder="identifier"></br>
+  <br>송신자 : <input type="text" value="" placeholder="sender"></br>
+  <br><fieldset>
+    <table><legend>메세지 송신 시간</legend>
+      <tr><td>날짜</td>
+	    <td><input type="date" value="2020-09-28"></td>
+      <td>시간</td>
+	     <td><input type="time"></td></tr>
+    </table>
+  </fieldset></br>
+  <fieldset><br>
+	<legend>경보 타입 선택</legend>
+	    경보 상황 코드 : <select name="status">
+          <option value="0" selected>-선택하시오-</option>
+		  <option value="1" >실제 상황</option>
+		  <option value="2" >훈련 상황</option>
+		  <option value="3" >시스템</option>
+          <option value="4" >테스트</option>
+          <option value="5" >경보 서식</option>
+    </select><br></br>
+        경보 내용 : <select name="msgType">
+          <option value="0" selected>-선택하시오-</option>
+		  <option value="1" >신규 경보</option>
+		  <option value="2" >경보 갱신</option>
+		  <option value="3" >경보 취소</option>
+          <option value="4" >응답 확인</option>
+          <option value="5" >응답 오류</option>
+	      </select><br></br>
+        경보 작성자 : <input type="text" value="" placeholder="source"></br>
+	 </select>
+  </fieldset></br>
+  <fieldset><br>
+    <legend>수신 대상 제한</legend>
+         수신자 범위 : <select name="scope">
+          <option value="0" selected>-선택하시오-</option>
+		  <option value="1" >일반인</option>
+		  <option value="2" >제한된 범위</option>
+		  <option value="3" >특정 주소</option>
+    </select><br></br>
+         수신자 제한 조건 : <input type="text" value="" placeholder="제한된 범위일 경우 입력"></br>
+         <br>수신자 주소 : <input type="text" value="" placeholder="특정 주소일 경우 필수 입력"></br>
+  </fieldset></br>
+  <fieldset><br>
+    <legend>기타</legend>
+         특별 처리 코드 : <input type="text" value=""></br>
+         <br>주석 : <input type="text" value="" placeholder="응답 오류 / 제한된 범위"></br>
+         <br>참조 : <input type="text" value="" ></br>
+         <br>사고 이름 : <input type="text" value="" ></br>
+  </fieldset></br>
+  <input type="submit" value="다음(Info)">
+</form>
+<!--boot js--><script id="jsbin-javascript" defer>// console.clear()
+
+</script>
+</body>
+</html>
